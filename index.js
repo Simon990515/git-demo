@@ -13,6 +13,10 @@ const runServer = async () => {
         res.json({msg: 'Hello World!'});
     });
 
+    app.get('/demo', (req, res) => {
+        res.json({msg: 'Demo works'});
+    });
+
     await app.listen(PORT);
     console.log(`Server running on port ${PORT}`);
 }
